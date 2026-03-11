@@ -41,6 +41,11 @@ public static class StatisticsHelper
         
         int min = values[0];
         
+        foreach (var v in values)
+        {
+            if (v < min)
+                min = v;
+        }
         
         return min;
     }
